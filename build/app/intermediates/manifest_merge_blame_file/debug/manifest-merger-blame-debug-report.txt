@@ -1,0 +1,250 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.TriangleTech.minimal_calculator"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:8:5-67
+14-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:8:22-64
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:24:5-79
+15-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:24:22-76
+16    <uses-permission android:name="android.permission.WAKE_LOCK" />
+16-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:25:5-68
+16-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:25:22-65
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+17-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:26:22-107
+18    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+18-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+18-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+19
+20    <application
+20-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:10:5-55:19
+21        android:name="io.flutter.app.FlutterApplication"
+21-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:11:9-57
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:13:9-43
+25        android:label="minimal_calculator"
+25-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:12:9-43
+26        android:usesCleartextTraffic="true" >
+26-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:14:9-44
+27        <meta-data
+27-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:17:9-19:69
+28            android:name="com.google.android.gms.ads.APPLICATION_ID"
+28-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:18:13-69
+29            android:value="ca-app-pub-3940256099942544~3347511713" />
+29-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:19:13-67
+30        <!-- Demo Android Value if u want put Real Ads you can Replace with Admob Appid -->
+31        <activity
+31-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:21:9-49:20
+32            android:name="com.TriangleTech.minimal_calculator.MainActivity"
+32-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:22:13-41
+33            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+33-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:25:13-163
+34            android:hardwareAccelerated="true"
+34-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:26:13-47
+35            android:launchMode="singleTop"
+35-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:23:13-43
+36            android:theme="@style/LaunchTheme"
+36-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:24:13-47
+37            android:windowSoftInputMode="adjustResize" >
+37-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:27:13-55
+38
+39            <!--
+40                 Specifies an Android theme to apply to this Activity as soon as
+41                 the Android process has started. This theme is visible to the user
+42                 while the Flutter UI initializes. After that, this theme continues
+43                 to determine the Window background behind the Flutter UI.
+44            -->
+45            <meta-data
+45-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:32:13-35:17
+46                android:name="io.flutter.embedding.android.NormalTheme"
+46-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:33:15-70
+47                android:resource="@style/NormalTheme" />
+47-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:34:15-52
+48            <!--
+49                 Displays an Android View that continues showing the launch screen
+50                 Drawable until Flutter paints its first frame, then this splash
+51                 screen fades out. A splash screen is useful to avoid any visual
+52                 gap between the end of Android's launch screen and the painting of
+53                 Flutter's first frame.
+54            -->
+55            <meta-data
+55-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:41:13-44:17
+56                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+56-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:42:15-79
+57                android:resource="@drawable/launch_background" />
+57-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:43:15-61
+58
+59            <intent-filter>
+59-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:45:13-48:29
+60                <action android:name="android.intent.action.MAIN" />
+60-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:46:17-68
+60-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:46:25-66
+61
+62                <category android:name="android.intent.category.LAUNCHER" />
+62-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:47:17-76
+62-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:47:27-74
+63            </intent-filter>
+64        </activity>
+65        <!--
+66             Don't delete the meta-data below.
+67             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+68        -->
+69        <meta-data
+69-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:52:9-54:33
+70            android:name="flutterEmbedding"
+70-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:53:13-44
+71            android:value="2" />
+71-->D:\Projects\freelance projects\minimal_calculator\android\app\src\main\AndroidManifest.xml:54:13-30
+72
+73        <service
+73-->[:firebase_core] D:\Projects\freelance projects\minimal_calculator\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+74            android:name="com.google.firebase.components.ComponentDiscoveryService"
+74-->[:firebase_core] D:\Projects\freelance projects\minimal_calculator\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+75            android:exported="false" >
+75-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\8bc95e08fe02ce145cad2ba2eb11e663\play-services-measurement-api-17.0.0\AndroidManifest.xml:29:13-37
+76            <meta-data
+76-->[:firebase_core] D:\Projects\freelance projects\minimal_calculator\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+77                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+77-->[:firebase_core] D:\Projects\freelance projects\minimal_calculator\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+78                android:value="com.google.firebase.components.ComponentRegistrar" />
+78-->[:firebase_core] D:\Projects\freelance projects\minimal_calculator\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+79            <meta-data
+79-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\8bc95e08fe02ce145cad2ba2eb11e663\play-services-measurement-api-17.0.0\AndroidManifest.xml:30:13-32:85
+80                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+80-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\8bc95e08fe02ce145cad2ba2eb11e663\play-services-measurement-api-17.0.0\AndroidManifest.xml:31:17-139
+81                android:value="com.google.firebase.components.ComponentRegistrar" />
+81-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\8bc95e08fe02ce145cad2ba2eb11e663\play-services-measurement-api-17.0.0\AndroidManifest.xml:32:17-82
+82            <meta-data
+82-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+83                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+83-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+85        </service> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+86        <activity
+86-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:29:9-33:64
+87            android:name="com.google.android.gms.ads.AdActivity"
+87-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:30:13-65
+88            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+88-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:31:13-122
+89            android:exported="false"
+89-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:32:13-37
+90            android:theme="@android:style/Theme.Translucent" />
+90-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:33:13-61
+91
+92        <provider
+92-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:35:9-39:39
+93            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+93-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:36:13-76
+94            android:authorities="com.TriangleTech.minimal_calculator.mobileadsinitprovider"
+94-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:37:13-73
+95            android:exported="false"
+95-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:38:13-37
+96            android:initOrder="100" />
+96-->[com.google.android.gms:play-services-ads-lite:18.1.1] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\308e406a2c2599976d3216d7f662d5cf\play-services-ads-lite-18.1.1\AndroidManifest.xml:39:13-36
+97
+98        <receiver
+98-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:29:9-33:20
+99            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+99-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:30:13-85
+100            android:enabled="true"
+100-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:31:13-35
+101            android:exported="false" >
+101-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:32:13-37
+102        </receiver>
+103        <receiver
+103-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:34:9-42:20
+104            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+104-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:35:13-100
+105            android:enabled="true"
+105-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:36:13-35
+106            android:exported="true"
+106-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:37:13-36
+107            android:permission="android.permission.INSTALL_PACKAGES" >
+107-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:38:13-69
+108            <intent-filter>
+108-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:39:13-41:29
+109                <action android:name="com.android.vending.INSTALL_REFERRER" />
+109-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:40:17-79
+109-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:40:25-76
+110            </intent-filter>
+111        </receiver>
+112
+113        <service
+113-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:44:9-47:40
+114            android:name="com.google.android.gms.measurement.AppMeasurementService"
+114-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:45:13-84
+115            android:enabled="true"
+115-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:46:13-35
+116            android:exported="false" />
+116-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:47:13-37
+117        <service
+117-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:48:9-52:72
+118            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+118-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:49:13-87
+119            android:enabled="true"
+119-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:50:13-35
+120            android:exported="false"
+120-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:51:13-37
+121            android:permission="android.permission.BIND_JOB_SERVICE" />
+121-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5f0f9e48cadb62c39f87066fc1b8e1e0\play-services-measurement-17.0.0\AndroidManifest.xml:52:13-69
+122
+123        <receiver
+123-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+124            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+124-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+125            android:exported="true"
+125-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+126            android:permission="com.google.android.c2dm.permission.SEND" >
+126-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+127            <intent-filter>
+127-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+128                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+128-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+128-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\422ff6a4e338884792e3e0248177c18a\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+129            </intent-filter>
+130        </receiver>
+131
+132        <provider
+132-->[com.google.firebase:firebase-common:18.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\a7451b3566e7138ca8b3537a7d8d8d4d\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+133            android:name="com.google.firebase.provider.FirebaseInitProvider"
+133-->[com.google.firebase:firebase-common:18.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\a7451b3566e7138ca8b3537a7d8d8d4d\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+134            android:authorities="com.TriangleTech.minimal_calculator.firebaseinitprovider"
+134-->[com.google.firebase:firebase-common:18.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\a7451b3566e7138ca8b3537a7d8d8d4d\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+135            android:exported="false"
+135-->[com.google.firebase:firebase-common:18.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\a7451b3566e7138ca8b3537a7d8d8d4d\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+136            android:initOrder="100" />
+136-->[com.google.firebase:firebase-common:18.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\a7451b3566e7138ca8b3537a7d8d8d4d\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+137
+138        <activity
+138-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+139            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+139-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+140            android:exported="false"
+140-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+141-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+142
+143        <meta-data
+143-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\1d4fd256523af8894d6b16c87081e4b6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+144            android:name="com.google.android.gms.version"
+144-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\1d4fd256523af8894d6b16c87081e4b6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+145            android:value="@integer/google_play_services_version" />
+145-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\shahr\.gradle\caches\transforms-2\files-2.1\1d4fd256523af8894d6b16c87081e4b6\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+146    </application>
+147
+148</manifest>
