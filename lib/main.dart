@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:audioplayers/audio_cache.dart';
 import 'package:firebase_admob/firebase_admob.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter/services.dart';
@@ -13,6 +14,7 @@ const String testDevice = 'MobileId';
 void main() {
   runApp(MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -123,9 +125,8 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
   Widget CalButtons(String ButtonValue, Color Buttoncolor, Color fontcolor,
       double Buttonheight, double ButtonWeights) {
     return Container(
-      margin: EdgeInsets.all(7),
-      height: MediaQuery.of(context).size.height * 0.1 * Buttonheight,
-      width: MediaQuery.of(context).size.width * ButtonWeights,
+      margin: EdgeInsets.all(5),
+      height: MediaQuery.of(context).size.height * 0.09 * Buttonheight,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
         gradient: LinearGradient(
@@ -161,7 +162,7 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
       double Buttonwidth) {
     return Container(
       margin: EdgeInsets.all(7),
-      height: MediaQuery.of(context).size.height * 0.1 * Buttonheight,
+      height: MediaQuery.of(context).size.height * 0.09 * Buttonheight,
       width: MediaQuery.of(context).size.width * Buttonwidth,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
@@ -196,7 +197,7 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
       double Buttonheight, double Buttonwidth) {
     return Container(
       margin: EdgeInsets.all(7),
-      height: MediaQuery.of(context).size.height * 0.1 * Buttonheight,
+      height: MediaQuery.of(context).size.height * 0.09 * Buttonheight,
       width: MediaQuery.of(context).size.width * Buttonwidth,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
@@ -233,7 +234,7 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
       double Buttonheight, double Buttonwidth) {
     return Container(
       margin: EdgeInsets.all(7),
-      height: MediaQuery.of(context).size.height * 0.1 * Buttonheight,
+      height: MediaQuery.of(context).size.height * 0.09 * Buttonheight,
       width: MediaQuery.of(context).size.width * Buttonwidth,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
@@ -270,7 +271,7 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
       double Buttonheight,double Buttonwidth) {
     return Container(
       margin: EdgeInsets.all(7),
-      height: MediaQuery.of(context).size.height * 0.1 * Buttonheight,
+      height: MediaQuery.of(context).size.height * 0.09 * Buttonheight,
       width: MediaQuery.of(context).size.width * Buttonwidth,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
@@ -308,7 +309,7 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
       double Buttonheight,double Buttonwidth) {
     return Container(
       margin: EdgeInsets.all(7),
-      height: MediaQuery.of(context).size.height * 0.1 * Buttonheight,
+      height: MediaQuery.of(context).size.height * 0.09 * Buttonheight,
       width: MediaQuery.of(context).size.width * Buttonwidth,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5),
@@ -452,52 +453,48 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
               ),
             ),
             Container(
-              height: height*0.1,
+              height: height*0.06,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                    Expanded(
-                      flex:3,
-                      child: Container(
-                        margin: EdgeInsets.all(5),
-                        child: Column(
-                          children: [
-                            Switch(value: isSwitched,
-                                onChanged: (value){
-                                  setState(() {
-                                    isSwitched=value;
-                                    print(isSwitched);
-                                  });
-                            },
+                    Container(
+                      child: Row(
+                        children: [
+                          Text("Sound",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+                          Switch(value: isSwitched,
+                              onChanged: (value){
+                                setState(() {
+                                  isSwitched=value;
+                                  print(isSwitched);
+                                });
+                          },
 
-                              activeTrackColor: Colors.blue[800],
-                              activeColor: Color(0xffF785FF),
-                            ),
-                            Text("Sound",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
-                          ],
-                        ),
+                            activeTrackColor: Colors.blue[800],
+                            activeColor: Color(0xffF785FF),
+                          ),
+
+                        ],
                       ),
                     ),
-                    Expanded(
-                      flex:7,
-                      child: Container(
-                        margin: EdgeInsets.all(5),
-                        child: Column(
-                          children: [
-                            Slider(
-                              activeColor: Color(0xffF785FF),
-                              min: 5.0,
-                              max: 50.0,
-                              value: _value,
-                              onChanged: (value) {
-                                setState(() {
-                                  _value = value;
-                                  print(_value);
-                                });
-                              },
-                            ),
-                            Text("Font",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),)
-                          ],
-                        ),
+                    Container(
+                      margin: EdgeInsets.all(5),
+                      child: Row(
+                        children: [
+                          Text("Font",style: TextStyle(fontSize: 14,fontWeight: FontWeight.bold),),
+                          Slider(
+                            activeColor: Color(0xffF785FF),
+                            min: 5.0,
+                            max: 50.0,
+                            value: _value,
+                            onChanged: (value) {
+                              setState(() {
+                                _value = value;
+                                print(_value);
+                              });
+                            },
+                          ),
+
+                        ],
                       ),
                     ),
                 ],
@@ -506,6 +503,7 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
             Column(
               children: <Widget>[
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Container(
                       width: MediaQuery.of(context).size.width,
@@ -557,6 +555,7 @@ class _MaterialCalculatorState extends State<MaterialCalculator> {
                   ],
                 ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Container(
                       width: MediaQuery.of(context).size.width * .50,
